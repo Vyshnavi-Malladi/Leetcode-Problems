@@ -13,11 +13,9 @@ class Solution {
 
         for(int macha:hm.keySet())
         {
-            int value=hm.get(macha);
-            if(value>n)
+            if(hm.get(macha)>n)
             {
-                ans=macha;
-                break;
+                return macha;
             }
         }
         return ans;
